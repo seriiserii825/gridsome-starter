@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome 2',
-  siteUrl: 'http://some.js',
+  siteUrl: '',
   siteDescription: 'Site desc',
   plugins: [
     {
