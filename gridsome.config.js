@@ -26,7 +26,13 @@ module.exports = {
           }
         }
       }
-    }
+    },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`
+      }
+    },
   ],
   templates: {
     Post: '/posts/:slug'

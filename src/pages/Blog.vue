@@ -19,7 +19,7 @@
 
 <static-query>
 {
-allPost {
+allPost (perPage: 2) {
     edges {
         node {
                 id
