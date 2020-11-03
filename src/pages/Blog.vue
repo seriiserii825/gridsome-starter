@@ -10,7 +10,7 @@
         <em>{{ edge.node.timeToRead }}</em>
         <hr>
         <div>
-            <span v-for="tag in edge.node.tags" :key="tag.id"># <strong>{{ tag.id }}</strong></span>
+            <span v-for="tag in edge.node.tags" :key="tag.id"># <g-link :to="tag.path">{{ tag.id }}</g-link></span>
         </div>
         <g-link :to="edge.node.path">Read more</g-link>
     </article>

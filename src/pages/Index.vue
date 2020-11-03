@@ -2,7 +2,7 @@
   <Layout>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/assets/i/favicon.png" width="100" height="200" fit="fill" />
+    <g-image alt="Example image" src="~/assets/i/favicon.png" width="150" height="200" fit="contain" />
 
     <h1>Hello, my Gridsome!</h1>
 
