@@ -6,9 +6,7 @@
           <div class="main-footer__info-item">
             <h3 class="title title--color">Contatti</h3>
             <div class="main-footer__contacts">
-              <div
-                  class="main-footer__contacts__item">Via Trentino 22, 31029 - Vittorio Veneto (TV) (Zona Industriale S. Giacomo di Veglia)
-              </div>
+              <div class="main-footer__contacts__item">Via Trentino 22, 31029 - Vittorio Veneto (TV) (Zona Industriale S. Giacomo di Veglia)</div>
               <div class="main-footer__contacts__item">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-instagram"></i>

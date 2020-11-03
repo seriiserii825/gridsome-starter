@@ -8,33 +8,26 @@ module.exports = {
   siteName: 'Gridsome 2',
   siteUrl: '',
   siteDescription: 'Site desc',
+  contactsTitle: 'Contatti',
   plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: './content/posts/**/*.md',
-        route: '/posts/:slug',
-        refs: {
-          // Reference to existing authors by id.
-          // author: 'Author',
-          // Create a Tag content type and its nodes automatically.
-          tags: {
-            typeName: 'Tag',
-            route: 'tags/:id',
-            create: true
-          }
-        }
-      }
-    },
     {
       use: `gridsome-plugin-netlify-cms`,
       options: {
         publicPath: `/admin`
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'CustomPage',
+        path: './content/pages/*.md'
       }
     },
   ],
   templates: {
-    Post: '/posts/:slug'
+    CustomPage: [{
+      path: '/:title',
+      component: '~/templates/CustomPage.vue'
+    }],
   }
 }
