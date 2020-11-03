@@ -1,5 +1,5 @@
 <template>
   <Layout>
-    <h1>Home</h1>
+    <h1>Le nostre birre</h1>
   </Layout>
 </template>
