@@ -18,15 +18,15 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'About',
-        path: './content/pages/about.md'
+        typeName: 'ChiSiamo',
+        path: './content/pages/chi-siamo.md'
       }
     },
   ],
   templates: {
-    About: [{
-      path: '/:slug',
-      component: '~/templates/About.vue'
+    CustomPage: [{
+      path: '/:title',
+      component: '~/pages/ChiSiamo.vue'
     }],
   }
 }
