@@ -1,5 +1,5 @@
 ---
-title: About us
+title: About
 ---
 
 ## Ossa narrat sortita fecerat sit conataque

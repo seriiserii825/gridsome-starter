@@ -8,7 +8,6 @@ module.exports = {
   siteName: 'Gridsome 2',
   siteUrl: '',
   siteDescription: 'Site desc',
-  contactsTitle: 'Contatti',
   plugins: [
     {
       use: `gridsome-plugin-netlify-cms`,
@@ -19,15 +18,15 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'CustomPage',
-        path: './content/pages/*.md'
+        typeName: 'About',
+        path: './content/pages/about.md'
       }
     },
   ],
   templates: {
-    CustomPage: [{
-      path: '/:title',
-      component: '~/templates/CustomPage.vue'
+    About: [{
+      path: '/:slug',
+      component: '~/templates/About.vue'
     }],
   }
 }
